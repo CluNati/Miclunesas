@@ -1,0 +1,23 @@
+body {
+	background: #484848;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.galeria {
+	width: 120%;
+}
+
+.galeria img {
+	vertical-align: top;
+	opacity: 0.2;
+	width: 400px;
+	margin: 25px;
+	padding: 5px;
+	border:1px ridge #484848;
+}
+
+.galeria img:hover {
+	border:1px solid #ff1616;
+	opacity: 1;
+}
