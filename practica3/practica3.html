@@ -7,6 +7,96 @@
     <title>Document</title>
 </head>
 <body>
-    
+   <div>
+    <h2>Ejercicio 1</h2>
+    <script>
+        function calcularFactorial() {
+        const numero = parseInt(prompt("Ingresa un número que desea sacar Factorial:"));
+
+        if (isNaN(numero)) {
+        return "Número inválido. Por favor, ingresa un número válido.";
+        }
+        
+        if (numero === 0 || numero === 1) {
+        return 1;
+        }
+        let resultado = 1;
+        
+        for (let i = 2; i <= numero; i++) {
+        resultado *= i;
+        }
+        return resultado;
+        }
+        const factorial = calcularFactorial();
+        document.write(`El factorial es: ${factorial}`);
+        </script>
+   </div>
+   <div>
+    <h2>Ejercicio 2</h2>
+    <script>
+
+        function fizzBuzz() {
+    for (let i = 1; i <= 100; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+      document.write(i+'. FizzBuzz'+ '<br>');
+    }
+    else if (i % 3 === 0) {
+      document.write(i+'. Fizz'+ '<br>');
+    } else if (i % 5 === 0) {
+      document.write(i+'. Buzz'+ '<br>');
+    }
+    else if(i){
+    document.write (i+'. '+'<br>');
+    }
+    }
+    }
+    fizzBuzz();
+
+    </script>
+   </div>
+   <div>
+    <h2>Ejercicio 3</h2>
+    <script>
+     function obtenerClima(temperatura) {
+         if (temperatura >= -10 && temperatura <= 15) {
+         return "Frío";
+         } else if (temperatura >= 16 && temperatura <= 25) {
+         return "Templado";
+         } else if (temperatura >= 26 && temperatura <= 40) {
+         return "Calor";
+         } else {
+         return "La temperatura está fuera del rango válido.";
+         }
+     }
+     let temperatura= parseInt(prompt("Ingresa la Temperatura:"));
+ 
+     let clima = obtenerClima(temperatura);
+     document.write("El clima es:", clima);
+     </script>
+   </div>
+   <div>
+    <h2>Ejercicio 4</h2>
+    <script>
+
+        function mostrarFechaActual() {
+
+            const diasSemana = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
+            const meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+
+            const fechaActual = new Date();
+            const diaSemana = diasSemana[fechaActual.getDay()];
+            const dia = fechaActual.getDate();
+            const mes = meses[fechaActual.getMonth()];
+            const año = fechaActual.getFullYear();
+
+            const formato = `${diaSemana}, ${dia} de ${mes} del ${año}`;
+            document.write(formato);
+        }
+        mostrarFechaActual();
+    </script>
+   </div>
+   
+<br>
+<h2>@Claudia Natalia Mercado Salvatierra</h2>
 </body>
 </html>
