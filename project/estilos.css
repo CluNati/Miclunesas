@@ -1,8 +1,4 @@
-{
-	
-	margin: 0;	
-	box-sizing: border-box;
-}
+
 
 body {
 	font-family: 'Open Sans', sans-serif;
@@ -53,7 +49,8 @@ header .menu a:hover {text-decoration: underline;}
 
 .main article .thumb img {
 	vertical-align: top;
-	width: 100%;
+	width: 80%;
+	
 }
 
 .main article h2 {
@@ -70,24 +67,34 @@ header .menu a:hover {text-decoration: underline;}
 }
 
 aside {
-	width: 30%;
-	background:#22181c;
-	padding: 20px;
+	width: 150%;
+	background:transparent;
+	padding: 25px;
 	display: flex;
-	flex-direction:column;
+	flex-direction:row;
 	flex-wrap:wrap;
-	justify-content:space-between;
+	justify-content: space-between;
+	
 }
 
 aside .combo {
-	font-size: 30px;
+	width: fit-content;
+	font-size: 10px;
 	text-align: center;
 	color: #f6e8ea;
-	padding: 50px 0;
-	margin: 20px 0;
+	padding: 20px;
+	margin: 50px;
 	background: #5a0001;
+	background-attachment: fixed;
+	
 }
-
+.combo img {
+	vertical-align: top;
+	width: 200px;
+	margin: 20px;
+	padding: 5px;
+	border:1px ridge #484848;
+}
 
 footer {
 	margin-top: 20px;
