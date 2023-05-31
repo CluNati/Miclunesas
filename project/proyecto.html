@@ -20,12 +20,21 @@
 				<img src="imagenes/2.png" alt="logo miclunesas" width="150">
 				<img src="imagenes/1.png" alt="logo hola miclunesas" width="200">
 			</div>
-			<nav class="menu">
-				<a href="#">&#9776; Menu</a>
-				<a href="index.html">Contacto</a>
-				<a href="blog.html">Contrataciones</a>
-				<a href="#">Ubicación</a>
+			<nav>
+				<ul class="navigation">
+					<li><a href="#" onclick="MenuDesplegable()">&#9776; Inicio</a></li>
+					<li><a href="#">Menu</a></li>
+					<li><a href="#">Contacto</a></li>
+					<li><a href="#">Contrataciones</a></li>
+					<li><a href="#">Ubicación</a></li>
+					<li><a href="#">Resrvas</a></li>
+				</ul>
 			</nav>
+			<script>
+				function MenuDesplegable() {
+				document.getElementsByClassName
+				("navigation")[0].classList.toggle("responsive");
+			}</script>
 		</header>
 
 		<main class="main">
@@ -45,7 +54,6 @@
 		</main>
 
 		<aside>
-			<h2 id="cupones">Cupones</h2>
 			<div class="combo">
 				<p>Combo 1</p>
 			</div>
