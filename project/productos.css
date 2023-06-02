@@ -173,6 +173,7 @@ footer .Redes-Sociales a:hover {
 
 	footer .autor {
 		order:2;
+		text-align: center;
 	}
 
 	footer .Redes-Sociales {
@@ -245,3 +246,4 @@ nav {
 		color: rgb(232, 243, 14);
 	}
 }
+
