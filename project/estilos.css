@@ -38,20 +38,20 @@ header .menu a {
 header .menu a:hover {text-decoration: underline;}
 
 .main {
-	background: #fff;
+	background:none;
 	padding: 20px;
-	width: 70%;
+	width: 100%;
 }
 
 .main article .thumb {
-	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .main article .thumb img {
-	vertical-align: top;
-	width: 100%;
-	flex-wrap:wrap;
-	justify-content:center;
+	max-width: 100%;
+	height: auto;
 }
 
 .main article h2 {
@@ -60,10 +60,10 @@ header .menu a:hover {text-decoration: underline;}
 	font-size: 32px
 	;
 }
-
 .main article p {
+	background: #f6e8ea;
 	margin-bottom: 20px;
-	font-size: 15px;
+	font-size: 20px;
 	line-height: 27px;
 }
 
@@ -198,7 +198,7 @@ footer .Redes-Sociales a:hover {
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
 	aside {
 		display: none;
 	}
