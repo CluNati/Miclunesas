@@ -10,8 +10,7 @@
 
 	<link rel="stylesheet" href="css/normalize.css">
 
-	<link rel="stylesheet" href="contacto.css">
-    <link rel="stylesheet" href="contacto.php">
+	<link rel="stylesheet" href="ubicacion.css">
 
 </head>
 <body>
@@ -36,33 +35,50 @@
 				document.getElementsByClassName
 				("navigation")[0].classList.toggle("responsive");
 			}</script>
+
+            
 		</header>
 		</header>
 
 		<main class="main">
 			<article>
-                <form action="contacto.php" method="post">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required><br>
-                  
-                    <label for="direccion">Dirección de entrega:</label>
-                    <input type="text" id="direccion" name="direccion" required><br>
-                  
-                    <label for="telefono">Teléfono:</label>
-                    <input type="tel" id="telefono" name="telefono" required><br>
-                  
-                    <label for="correo">Correo electrónico:</label>
-                    <input type="email" id="correo" name="correo" required><br>
-                  
-                    <label for="pedido">Pedido:</label>
-                    <textarea id="pedido" name="pedido" required></textarea><br>
-                  
-                    <input type="submit" value="Enviar pedido">
-                  </form>
+                <div>
+                    <head>
+                        <title>Mapa de Google</title>
+                        <style>
+                          
+                          #map {
+                            height: 400px;
+                            width: 200%;
+                          }
+                        </style>
+                      </head>
+                      <body>
+                        <h1>Mapa de Google</h1>
+                        <div id="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d237.94027873064147!2d-66.17699671538064!3d-17.40965388439039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93e37390a96e5be9%3A0xd634f72ab2a7dd10!2sCap.W.Baya%201001%2C%20Cochabamba!5e0!3m2!1ses!2sbo!4v1685733149622!5m2!1ses!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            
+                        </div>
+                      
+                        <script>
+                          function addMarker() {
+                            var mapFrame = document.querySelector('iframe');
+                            mapFrame.addEventListener('load', function() {
+                              var map = mapFrame.contentWindow.document.querySelector('div').firstChild;
+                              var marker = new mapFrame.contentWindow.google.maps.Marker({
+                                position: {lat: 40.712125, lng: -74.008748},
+                                map: map,
+                                title: 'Marcador'
+                              });
+                            });
+                          }
+                          addMarker();
+                        </script>
+                      </body>
+                </div>
 			</article>
-            
 		</main>
-
+<br>
 		<footer>
 	
 			<div class="Redes-Sociales">
