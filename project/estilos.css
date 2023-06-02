@@ -61,9 +61,10 @@ header .menu a:hover {text-decoration: underline;}
 	text-align: center;
 }
 .main article p {
+	font-family: "Sitka Banner";
 	background: #f6e8ea;
 	margin-bottom: 20px;
-	font-size: 20px;
+	font-size: 30px;
 	line-height: 27px;
 	text-align: center;
 }
