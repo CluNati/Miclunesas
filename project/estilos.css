@@ -125,10 +125,7 @@ footer .Redes-Sociales a:hover {
 }
 
 
-@media screen and (max-width: 800px)
-{
-	
-
+@media screen and (max-width: 800px){
 	.menu a:first-child {
 		display: none;
 	}
