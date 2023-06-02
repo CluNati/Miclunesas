@@ -10,7 +10,8 @@
 
 	<link rel="stylesheet" href="css/normalize.css">
 
-	<link rel="stylesheet" href="estilos.css">
+	<link rel="stylesheet" href="contacto.css">
+    <link rel="stylesheet" href="contacto.php">
 
 </head>
 <body>
@@ -23,12 +24,11 @@
 			<nav>
 				<ul class="navigation">
 					<li><a href="#" onclick="MenuDesplegable()">&#9776; Inicio</a></li>
-                    <li><a href="proyecto.html">Inicio</a></li>
-					<li><a href="menu.html">Menu</a></li>
+					<li><a href="proyecto.html">Inicio</a></li>
+                    <li><a href="men.html">Menu</a></li>
 					<li><a href="contacto.html">Contacto</a></li>
-					<li><a href="contrataciones.html">Contrataciones</a></li>
-					<li><a href="ubicacion.html">Ubicación</a></li>
-					<li><a href="reservas.html">Reservas</a></li>
+					<li><a href="#">Contrataciones</a></li>
+					<li><a href="#">Ubicación</a></li>
 				</ul>
 			</nav>
 			<script>
@@ -37,60 +37,53 @@
 				("navigation")[0].classList.toggle("responsive");
 			}</script>
 		</header>
+		</header>
 
 		<main class="main">
 			<article>
-				<div class="thumb">
-					<img src="imagenes/3.jpeg" alt="miclunesa" >
-				</div>
-				<h2> -.-.-.-.-.-.-.-.-.-.-.-.</h2>
-				<p>Queremos invitarte a que nos acompañes en esta aventura gastronómica a la cual nos aventuramos con entusiasmo, pero sobre todo, ¡con mucho sabor!
-					Te Presentamos Miclunesas, Milanesas elaboradas artesanalmente a partir de un generoso filete de pechuga de pollo, 
-					empanizada con una mezcla de ingredientes y especias "by Clu_Nat" que hace que cada mordida sea extra crujiente,
-					un delicioso pan Baguette grillado e ingredientes frescos, papas fritas rústicas y como no podia faltar, 
-					nuestra salsa verde acompañada de la mano de nuestra salsa de tomate casera y la tradicional llajwita 
-					con un toque especial.</p>
-
+                <form action="contacto.php" method="post">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required><br>
+                  
+                    <label for="direccion">Dirección de entrega:</label>
+                    <input type="text" id="direccion" name="direccion" required><br>
+                  
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required><br>
+                  
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" required><br>
+                  
+                    <label for="pedido">Pedido:</label>
+                    <textarea id="pedido" name="pedido" required></textarea><br>
+                  
+                    <input type="submit" value="Enviar pedido">
+                  </form>
 			</article>
+            
 		</main>
-
-		<aside>
-			<div class="combo">
-				<p><p><img src="https://th.bing.com/th/id/R.88c35aed7500c4261e9e67d1ac29f3c7?rik=ix7akH4lqP1KSw&pid=ImgRaw&r=0" alt="combo1">
-					
-					<h3>COMBO 1 <br>
-					MILANESA  + CERVEZA</h3>
-			</div>
-
-			<div class="combo">
-				<p><img src="https://tb-static.uber.com/prod/image-proc/processed_images/44abd72e6dddc2e33f436195a89747e2/5954bcb006b10dbfd0bc160f6370faf3.jpeg" alt="combo kids"></p>
-				
-				<h3>COMBO 2 <br>
-				COMBO KID<br> MILANESA + PAPA FRITA+ GASEOSA </h3></p>
-			</div>
-
-			<div class="combo">
-				<p><img src="https://scontent.fsrz4-1.fna.fbcdn.net/v/t1.6435-9/90034730_3056283044430525_8521851650892103680_n.jpg?stp=cp0_dst-jpg_e15_q65_s320x320&_nc_cat=108&ccb=1-7&_nc_sid=2d5d41&_nc_ohc=9XXWQbns3-oAX9lwO7F&_nc_ht=scontent.fsrz4-1.fna&oh=00_AfA6QHB5FhFJ0b_k58TeYtkcHkqdKYOnp1fIYIyL_qidtg&oe=649E0942" alt="promo 2x1"></p>
-				
-				<h3>PROMO <br>
-				MILANESA  2x1<br> NAPOLITANA </h3></p>
-			</div>
-
-			<div class="combo">
-				<p><img src="https://cochinopop.com/wp/wp-content/uploads/2018/06/rams.jpg" alt="cumpleañero"></p>
-				
-				<h3>PARA CUMPLEAÑEROS<br>
-				MILANESA + GASEOSA <br> PAPAS + POSTRE  </h3></p>
-			</div>
-			
-		</aside>
 
 		<footer>
 	
 			<div class="Redes-Sociales">
-				<a href=#>Facebook</a>
-				<a href=#>Instagram</a>
-				<a href=#>Whatsapp</a>
+				<a href="https://www.facebook.com/Miclunesas" target="_blank">
+				<i class="fab fa-facebook"></i> Facebook</a>
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">				
+				<script src="path/to/font-awesome/js/all.min.js"></script>
+				
+				<a href="https://wa.me/59168100485/" target="_blank">
+					<i class="fab fa-whatsapp"></i> Whatsapp
+				</a>
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+				
+				
+				
+				<a href="https://www.instagram.com/miclunesas/" target="_blank">
+				<i class="fab fa-instagram"></i> Instagram</a>
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+					
+			</div>
+				
 			</div>
 
 			<div class="autor">
@@ -102,3 +95,20 @@
 	
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
